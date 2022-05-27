@@ -1,0 +1,18 @@
+.word-header {
+    font-size: 3vmin;
+}
+.word-item {
+    font-size: 2vmin;
+    display:list-item;
+    list-style-position: inside;
+    font-size: 2vmin;
+    text-align: match-parent;
+}
+
+.ul {
+    text-align: center;
+}
+
+.ul li {
+    justify-content: left;
+}

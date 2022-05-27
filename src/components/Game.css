@@ -1,0 +1,104 @@
+.Game-container{
+    text-align: center;
+    width: 88%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    caret-color: rgba(0,0,0,0);
+}
+
+.Game-title{
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.Mistakes-made {
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.Images{
+    text-align: center;
+}
+
+.Instruction{
+    font-size:3vmin;
+    text-align: center;
+}
+
+.game-word{
+    text-align: center;
+    font-size: 5vmin;
+}
+
+.Key{
+    border: 1px solid black;
+    width: 5vmin;
+    height: 5vmin;
+    font-size: 4vmin;
+    border-radius: 1vmin;
+    margin-inline: 0.25vmin;
+    margin-block: 0.25vmin;
+    text-align: center;
+    background-color:rgb(192, 187, 246);
+}
+
+.Key:hover{
+    background-color: aquamarine;
+    box-shadow: 2px 2px 4px #000000;
+
+}
+
+@keyframes square-in-center {
+    from {
+      clip-path: inset(100% 100% 100% 100%);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+}
+
+.Keys-correct{
+    border: 1px solid black;
+    width: 5vmin;
+    height: 5vmin;
+    font-size: 4vmin;
+    border-radius: 1vmin;
+    margin-inline: 0.25vmin;
+    margin-block: 0.25vmin;
+    text-align: center;
+    background-color:rgb(14, 240, 14); 
+    animation: square-in-center cubic-bezier(.25, 1, .30, 1) 0.3s;
+}
+.Keys-wrong{
+    border: 1px solid black;
+    width: 5vmin;
+    height: 5vmin;
+    font-size: 4vmin;
+    border-radius: 1vmin;
+    margin-inline: 0.25vmin;
+    margin-block: 0.25vmin;
+    text-align: center;
+    cursor: not-allowed;
+    background-color:rgb(244, 9, 9);
+
+    animation: square-in-center cubic-bezier(.25, 1, .30, 1) 0.3s;
+}
+
+@keyframes wipe-in-down {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+}
+
+.Footer p {
+    font-size: 2.5vmin;
+    font-style: bold;
+    animation: 3s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+}
+
+.img {
+    max-height: fit-content;
+}
