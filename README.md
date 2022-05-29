@@ -1,4 +1,4 @@
-# TikTok Youth Camp Project B - Hangman app
+# TikTok Youth Camp Project A - Hangman app
 
 This is a Hangman app built with React and CSS, with the inline JSX syntax enabled by 
 React making there no need for a separate html document.
